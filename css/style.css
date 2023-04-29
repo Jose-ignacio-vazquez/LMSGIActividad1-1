@@ -83,7 +83,8 @@ nav li a:hover {
     top:270px;
     position: fixed;
     width:100%;
-    display: block;
+    display: flex;
+    justify-content: flex-end;
     position: relative;
     cursor: pointer;
     font-size: 22px;
@@ -137,19 +138,29 @@ article > p
 
 aside
   {
-    right: 0; top: 0;
     float: right; 
-    top: 0;
-    width:20%;
+    box-sizing: border-box;
+    width:40%;
     padding: 1%;
     margin: 1%;
+    
   }
 
+ 
+
+  aside ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+  }
+
+ 
+/*
   aside > picture
     {
       max-width: 90%;
     }
-
+*/
   /* footer es el pie de página y aparece en todas y cada una de las paginas de nuestra web */
 
 footer
